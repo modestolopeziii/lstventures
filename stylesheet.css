@@ -1,301 +1,732 @@
-	<!DOCTYPE html>
-	<html><head>
-		<title> Lee System Technology Ventures </title>
-		<link rel= "stylesheet" href= "stylesheet.css" />
-		<link rel= "stylesheet" href= "normalize.css" />
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-	</head><body>
+html, body { margin: 0; padding: 0; font: 16px helvetica; overflow-x: hidden;
+}
+/* MAIN MENU */
 
-		
+a {text-decoration: none;}
 
-		
+section,header, ul, li, p, a, h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato', sans-serif;
 
-		<!-- MAIN NAVIGATION -->
-		
-		<!-- HERO -->
-		<section class= "hero">
-			<header class= "menu-navigation">
-				<a href= "index.html"><figure class= "logo"> </figure></a>
-				<ul class= "other-menu">
+	-webkit-transition: background-color .4s;
+	   -moz-transition: background-color .4s;
+	    -ms-transition: background-color .4s;
+ 	     -o-transition: background-color .4s;
+}
 
-					<li><a href= "#" class= "common-navigation"> Client Login </a> </li>
+ul {
+	list-style: none;
+	margin: 0; padding: 0;
+}
 
-					<li><a href= "#" class= "common-navigation"> Security |</a> </li>
-				</ul>
-				<ul class= "main-menu">
-					<li><a href= "#about-section" class= "about-navigation common-navigation"> About </a> </li>
-					
-					<li><a href= "#product-section" class= "product-navigation common-navigation"> Business Solution </a> </li>
-					
-					<li><a href= "#contact-section" class= "contact-navigation common-navigation"> Contact </a> </li>
-					
-					<li><a href= "news.html" class= "common-navigation"> News </a> </li>
-				</ul>
+.highlight-underline {
+	border-bottom: 1px solid #FFFFFF;
+	font-weight: bold;
+}
 
-			</header>
-			<section class= "hero-container">
-			
-			<p class= "hero-description"> <span class= "quote">"</span>
-				We simplify <span class= "highlight-underline">Software Solution</span>.<span class= "quote">"</span>
-			</p>	
-				<section class= "hero-title"> - Lee System Technology Ventures </section>
-			
-			</section>
-				<figure class= "icon-down"></figure>
-		</section>
-		<!--end HERO-->
+.underline-green {
+	border-bottom: 2px solid #9AD102;
+}
 
+.active-menu {
+	border-right: 1px solid black;
+	background-color: #9AD102;
+	color: #FFFFFF;
+}
 
-		<!--NEWS-->
-			<section class= "news-section">
-				<section class= "news-container">
-				<section class= "news title"> <h1> Latest News </h1> </section>
+.common-link { 
+	color: #9AD102; 
+	border: 1px solid #9AD102;
+	padding: 10px;
+	border-radius: 5px;
+	float: right;
+}
 
-				<!--NEWS 1-->
-					<section class= "news-wrap">
-						<figure class= "news-image"> </figure>
-						<section class= "news-description">
-							<h3> 4 tips to become a successful <span class= "underline-green">Web Developer</span> </h3>
-							<section class= "news-social-media">
-								<ul>
-									<li><strong>4/4/2014</strong></li>
-									<li>| 5 mins read</li>
-									<li><figure class= "fb-share-icon"></figure>	</li>
-									<li><figure class= "twitter-share-icon"></figure></li>
-								</ul>
-							</section>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#"> Read more >> </a>
-							</p>
-						</section>
-					</section>
-				<!--end NEWS 1-->
-				
-				<!--NEWS 1-->
-					<section class= "news-wrap">
-						<figure class= "news-image"> </figure>
-						<section class= "news-description">
-							<h3> <span class= "underline-green">Google Glass</span> has been released in USA </h3>
-							<section class= "news-social-media">
-								<ul>
-									<li><strong>4/4/2014</strong></li>
-									<li>| 5 mins read</li>
-									<li><figure class= "fb-share-icon"></figure>	</li>
-									<li><figure class= "twitter-share-icon"></figure></li>
-								</ul>
-							</section>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#"> Read more >> </a>
-							</p>
-						</section>
-					</section>
-				<!--end NEWS 1-->
-				
-				<!--NEWS 1-->
-					<section class= "news-wrap">
-						<figure class= "news-image"> </figure>
-						<section class= "news-description">
-							<h3> <span class= "underline-green">'Hack'</span> - New programming language developed by Facebook </h3>
-							<section class= "news-social-media">
-								<ul>
-									<li><strong>4/4/2014</strong></li>
-									<li>| 5 mins read</li>
-									<li><figure class= "fb-share-icon"></figure>	</li>
-									<li><figure class= "twitter-share-icon"></figure></li>
-								</ul>
-							</section>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#"> Read more >> </a>
-							</p>
-						</section>
-					</section>
-				<!--end NEWS 1-->
-					<nav class= "news-pagination">
-						<<  1 / 5  >>
-					</nav>
-				</section>
+.common-link:hover {
+	background: #9AD102;
+	box-shadow: 0px 2px 5px -1px #808080;
+}
 
-			</section>
-		<!--end NEWS-->
+.common-link:hover > a {
+	color: #FFFFFF;
+}
 
-		<!--ABOUT-->
-		<section class= "about-section" id= "about-section">
-			<section class= "about-container">
-				<section class= "about-title"> <h1>About LST</h1> </section>
-				<section class= "about-description"> 
-					<p>
-						Our goal is to establish a long-lasting business relationship with each of our clients. To help us achieve this goal we are committed to providing quality products and good service.
-					</p>
-				</section>
-				<span class= "common-link"> <a href= "about.html"> More about LST >> </a> </span>
-			</section>
-		</section>
-		<!--end ABOUT-->
+.common-link:active {
+	box-shadow: 0;
+}
+
+.common-link a {color: #9AD102;}
+
+.menu-navigation {
+	position: fixed;
+	border: 0px solid black;
+	height: 100px; width: 100%;
+	z-index: 99999;
+	background: #FFFFFF;
+}
+
+.menu-navigation .logo {
+	background: url('logo.png');
+	background-size: 432px 72px;
+	background-repeat: no-repeat;
+	width: 432px; height: 72px;
+	margin: 15px 0 0 30px;
+}
 
 
-		<!--PRODUCT SECTION-->
-		<section class= "product-section" id= "product-section">
-			
-			<section class= "product-container">
-				<section class= "product-title"> <h1>Product and Business Solution</h1> </section>
-				
-				<header class= "product-navigation">
-					<ul>
-						<li><a href= "#"> Payroll System <figure class= "arrow-down-icon"></figure></a>
-<!--							<ul class= "payroll-sub-menu-container list-down">
-								<li class= "payroll-sub-menu"><a href= "#"> Client Server </a></li>
-								<li class= "payroll-sub-menu"><a href= "#"> Online </a></li>
-								<li class= "payroll-sub-menu"><a href= "#"> Outsourcing </a></li>
-							</ul>
--->
-						</li>
-						<li><a href= "#"> Human Capital Management (HCM) </a></li>
-						<li><a href= "#">  Accounting System </a></li>
-						<li><a href= "#">  School/Education System </a></li>
-					</ul>
-				</header>
-				
-				<section class= "product-1">
-					<figure class= "product-image">
-						<section class= "product-description"></section>
-					</figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .main-menu {
+	border: 0px solid #FFFFFF;
+	margin: -46px 200px 0 0px;
+	display: inline-block;
+	padding-top: 0px;
+	float: right;
+}
 
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .main-menu li {
+	list-style: none;
+	border: 0px solid black;
+	float: left;
+	margin-right: 30px;
+	font-size: 20px;
+}
 
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .main-menu li a {
+	color: #000000; /*#FBF3BE;*/
+	border: 0px solid #FFFFFF;
+	padding: 10px;
+	border: 0px solid #9AD102;
+}
 
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .main-menu li a:hover {
+	border-bottom: 2px solid #FFFFFF;
+}
 
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .other-menu {
+	border: 0px solid black;
+	display: inline-block;
+	width: 200px;
+	font-size: 16px;
+	float: right;
+	margin: -45px 0px 0 0;
+	padding-right: 30px;
+}
 
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+.menu-navigation .other-menu li a {
+	color: #000000;
+	margin-right: 5px;
+}
 
-			<span class= "common-link"> <a href= "business-solution.html"> View all projects >> </a> </span>
-			</section>
-		</section>
-		<!--end PRODUCT-->
+
+.menu-navigation .other-menu li {
+	list-style-type: none;
+	float: right;
+}
+/**********************************************************/
 
 
 
-		<!-- CONTACT -->	
-		<section class= "contact-section" id= "contact-section">
-		<section class= "contact-wrap">
-				<h1> Let's get in touch! or just say Hi!</h1>
-
-				<ul class= "contact-info-content">
-					<li><figure class= "address common-icon"></figure>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#887B 8th Avenue<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;near corner Rizal Ave. Extension &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grace Park, Caloocan City<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines, 1406</li><br/>
-					<li><figure class= "telephone common-icon"></figure> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;238-5160, 709-7229</li><br/>
-					<li><figure class= "mobile common-icon"></figure> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(63)0918-9638178, 0917-8687348</li><br/>
-					<li><figure class= "email-icon common-icon"></figure> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;support@lstventures.com</li><br/>
-				</ul>
-				<form class= "email-form">
-				<input type= "text" placeholder= "Your Name" class= "name common-input" required /> <br />
-				<input type= "email" placeholder= "Your E-mail" class= "email common-input" required/> <br />
-				<input type= "text" placeholder= "Subject" class= "subject common-input" required /> <br />
-				<textarea class= "message" placeholder= "Your Message"></textarea> <br />
-				<input type= "submit" value= "Send" />
-				</form>
-			</section>
-			<figure> </figure>
-		</section>
-	<!--end-->
-
-	<!-- FOOTER -->
-		<section class= "footer-section">
-			<p class= "footer-contact">
-				Copyright 2014. LST Ventures Technology. All Rights Reserved. <!--<a href="#">[ Privacy Policy ] [ Terms and Conditions ]</a>-->
-			</p>
-		</section>
-	<!--end FOOTER-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
-
-	<script>
-		$(document).ready(function() {
-			activeMenu();
-			 $(window).bind('scroll',function(){
-				activeMenu();
-			   });
-		
-			$('a.about-navigation').click(function(e){
-					$('html, body').stop(true,false).animate({
-					scrollTop:$('#about-section').offset().top
-					}, 1000);
-				e.preventDefault();
-			});
-		
-			$('a.product-navigation').click(function(e){
-				$('html, body').stop(true,false).animate({
-					scrollTop:$('#product-section').offset().top
-					}, 1000);
-				e.preventDefault();
-			  });
-
-			$('a.contact-navigation').click(function(e){
-					$('html, body').stop(true,false).animate({
-					scrollTop:$('#contact-section').offset().top
-				}, 1000);
-			e.preventDefault();
-				}); 
-		});
 
 
-		function activeMenu(){
-			var menu1 =  0;
-			
-			var menu2 =  $('#product-section').offset().top - (($('#contact-section').offset().top - $('#product-section').offset().top) / 2);
-			
-			var menu3 =  $('#contact-section').offset().top - (($(document).height() - $('#contact-section').offset().top) / 2);
-		
-			if($(document).scrollTop() >= menu1 && $(document).scrollTop() < menu2) {
-				//$('.menu-navigation ul li .about-navigation').css('border-bottom','2px solid #FFFFFF');
-			}	
 
-			else if ($(document).scrollTop() >= menu2 && $(document).scrollTop < menu3) {
-				//$('.menu-navigation ul li .product-navigation').css('border-bottom','2px solid #FFFFFF');
-			}
 
-			else if ($(document).scrollTop() >= menu3) {
-				//$('.menu-navigation ul li .contact-navigation').css('border-bottom','2px solid #FFFFFF');	
-			}
-		
-		}
-	/*	
-		$(document).ready(function(){
-			$('.product-section .product-container .product-navigation ul li a').hover(function(){
-				$('.payroll-sub-menu-container').addClass('list-down');
-			});
-			
 
-		});
-	*/
-	</script>
 
-	</body></html>
+/* HERO */
+.hero {
+	border: 0px solid #000000;
+	background-color: #47b63f;/*#9AD102;*/
+}
+
+
+.hero .hero-container {
+	border: 0px solid black;
+	margin: 0px auto;
+	width: 90%; height: 360px;
+	text-align: center;	
+	color: #9AD102;
+	padding: 50px 0 30px 0;
+}
+
+.hero  .hero-container .hero-description {
+	font-size: 45px;
+	font-family: 'Alegreya Sans', sans-serif;
+	border: 0px solid black;
+	margin: 140px 0 50px 0;
+	color: #FFFFFF;
+}
+
+.hero  .hero-container .hero-title {
+	border: 0px solid black;
+	font-size: 18px;
+/*	background-color: #FFFFFF;*/
+	color: #9AD102;
+	text-align: right;
+	width: 75%;
+	margin: 0 auto;
+	padding: 0px 0 0px 0;
+	COLOR: #FFFFFF;
+}
+
+
+/* NEWS SECTION */
+
+.news-section {
+	width: 100%;
+/*	font-size: 0;*/
+	border: 1px solid #C3C3C3;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.news-section h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9AD102;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.news-section .news-container {
+	width: 100%;
+	margin: 0 auto;
+	border: 0px solid #000000;
+}
+
+.news-section .news-container .news-navigation-container {
+	border-bottom: 0px solid #c3c3c3;
+	padding: 00px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.news-section .news-container .news-navigation-container ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	margin-top: 25px;
+}
+
+.news-section .news-container .news-navigation-container ul li:nth-child(2):hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.news-section .news-container .news-wrap {
+	border: 0px solid #C3C3C3;
+	width: 25%;
+	display: inline-block;
+	margin: 10px auto 0 auto;
+	font-size: 18px;
+	padding: 20px;
+	text-overflow: ellipsis;
+}
+
+.news-section .news-container .news-wrap .news-description p,
+.news-section .news-container .news-wrap .news-description h3,
+.news-section .news-container .news-wrap .news-description .news-social-media {
+	text-align: left;
+}
+
+.news-section .news-container .news-wrap .news-description .news-social-media {
+	border-top: 1px solid black;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.news-section .news-container .news-wrap .news-description .news-social-media ul li {
+	display: inline-block;
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+.news-section .news-container .news-wrap .news-description .news-social-media .fb-share-icon {
+	border: 0px solid black;
+	width: 70px; height: 16px;
+	background-image: url(fb-share-icon.png);
+	background-repeat: no-repeat;
+	background-size: 70px;
+}
+
+.news-section .news-container .news-wrap .news-description .news-social-media .twitter-share-icon {
+	border: 0px solid black;
+	width: 90px; height: 17px;
+	background-image: url(twitter-share-icon.png);
+	background-repeat: no-repeat;
+	background-size: 90px;
+}
+
+.news-section .news-pagination {
+	border: 0px solid #000000;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 25px;
+}
+/*end NEWS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT SECTION */
+.about-section,
+.page-about-section {
+	width: 100%;
+	padding: 100px 0 50px 0;
+	border: 1px solid #C3C3C3;
+}
+
+.about-section { /*home page -> about section*/
+	background: #F2F2F2;
+}
+
+
+.about-section .about-container {
+	border: 0px solid black;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 20px;
+	padding: 30px 0 100px 0;
+}
+
+.about-section .about-container .about-title h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9AD102;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.about-section .about-container .about-description p {
+	text-align: center;
+	border: 0px solid black;
+	font-size: 25px;
+	line-height: 160%;
+	margin-bottom: 30px
+}
+
+
+
+/* PAGE ABOUT */
+.page-about-section { /* about page */
+	background: #FFFFFF;
+}
+
+.about-section .about-container .page-about-description p {
+	text-align: left;
+	line-height: 200%;
+	font-size: 26px;
+}
+
+.about-section .about-container .page-about-description {
+	width: 90%;
+	margin: 0 auto;
+}
+/*end PAGE ABOUT 
+
+/* end ABOUT **********************************************************/*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCT SECTION */
+.product-section {
+	border: 1px 0 1px 0;
+	border-bottom: 1px solid #c3c3c3;
+}
+
+.product-section .product-container {
+	border: 0px solid black;
+	font-size: 20px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	padding: 120px 0 100px 0;
+	text-align: center;
+}
+
+.product-section .product-container .product-title h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9AD102;
+	width: 80%;
+	margin: 0 auto 0px auto;
+}
+
+.product-section .product-container .product-navigation {
+	border: 0px solid #C3C3C3;	
+	margin: 0 auto 100px auto;
+	width: 80%;
+}
+
+
+.product-section .product-container .product-navigation ul li {
+	border: 0px solid black;
+	float: left;
+	margin: 0 auto; padding: 10px 9px 10px 9px;
+	text-align: center;
+	width: auto;
+}
+
+.product-section .product-container .product-navigation ul li a,
+.product-section .product-container .payroll-sub-menu-container a {
+	color: #000000;
+	padding: 10px;
+}
+
+.product-section .product-container .product-navigation ul li:nth-child(1) {
+	/*border-left: 1px solid #9AD102;*/
+}
+
+.product-section .product-container .product-navigation ul li a:hover {
+	text-decoration: underline;
+}
+
+.product-section .product-container .payroll-sub-menu-container {
+	border: 0px solid #c3c3c3;
+	width: auto;
+	list-style: none;
+	margin: 0px 0 0px 0px;
+	padding: 10px 0 10px 20px;
+/*	visibility: hidden; */
+/*	
+	border-left: 1px solid #9AD102;
+	border-bottom: 1px solid #9AD102;
+	border-right: 1px solid #9AD102;
+*/
+}
+
+.product-section .product-container .payroll-sub-menu-container ul li{
+}
+
+.product-section .product-container .list-down {
+	display: block;
+}
+
+.product-section .product-container .payroll-sub-menu-container ul{
+	list-style: none;
+}
+
+.product-section .product-container .payroll-sub-menu-container .payroll-sub-menu {
+	border: 0px solid black;
+	display: block;
+}
+
+.product-section .product-container .payroll-sub-menu-container .payroll-sub-menu a:hover {
+	background-color: #C3C3C3;
+}
+
+.product-1 {
+	border: 1px solid #c3c3c3;
+	width: 28%; /*30%*/  height: 300px;
+	margin: 0 20px 35px 20px;
+	display: inline-block;
+}
+
+.product-1:nth-child(odd) {
+	background-image: url(adidas.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.product-1:nth-child(even) {
+	background-image: url(nike.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.prouduct-1 .product-image .product-description {
+	border: 3px solid #c3c3c3;
+	width: 28%; /*30%*/  height: 300px;
+	margin: 0 15px 35px 20px;
+	display: inline-block;
+	
+	padding: 0;
+	background-color: rgba(0,0,0, 0.9);
+	position: relative;
+	transition: opacity .4s;
+}
+
+.prouduct-1 .product-image:hover {
+	background-color: rgba(0,0,0, 0.1);
+	cursor: pointer;
+}
+/*end PRODUCT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+#contact-section {
+	background-color: #F2F2F2; /*#5C855B;*/
+	padding: 80px 0 50px 0;
+	
+}
+
+.contact-section .contact-wrap {
+	border: 1px solid red;
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+	border: 0px solid #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact-section .contact-wrap .send-email {
+	border: 0px solid #000000;
+	width: 90%;
+	margin: 100px auto 50px auto;
+}
+
+.contact-section .contact-wrap h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9AD102;
+	width: 80%;
+	margin: 0 auto 50px auto;
+}
+
+
+input:not([type="submit"]) {
+	padding: 15px 10px 15px 60px;
+	width: 87%;
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #9AD102;
+	transition: background-color .3s;
+	
+}
+
+input:not([type="submit"]):focus {
+	border: 0;
+	background-color: #ecf9ec;
+}
+
+input[type="submit"] {
+	border: 1px solid #9AD102;
+	background-color: transparent;
+	color: #349b49;
+	padding: 10px 30px 10px 30px;
+	margin-top: 10px;
+	font-size: 20px;
+	width: 100%;
+	transition: background-color .5s;
+}
+
+input[type="submit"]:hover {
+	background-color: #9AD102;
+	color: #FFFFFF;
+}
+
+textarea {
+	width: 93%; height: 120px;
+	margin-top: 5px;
+	font-size: 18px;
+	color: #000000;
+	padding: 20px;
+	transition: background-color .3s;
+	background-color: #FFFFFF;
+	border: 1px solid #9AD102;
+/*
+	background-image: url(icons.png);
+	background-repeat: no-repeat;
+*/
+}
+textarea:focus {
+	background-color: #ecf9ec;
+}
+
+.contact-info-content,
+.email-form {
+	border: 0px solid black;
+	height: 100%;
+	display: inline-block;
+}
+
+.contact-info-content {
+	padding: 50px 50px 30px 50px;
+	width: auto;
+}
+
+.email-form {
+	padding: 30px 0px 50px 0px;
+	width: 45%;
+	text-align: left;
+}
+
+.contact-info-content li {
+	text-align: left;
+	border: 0px solid black;
+}
+
+.common-input,
+.common-icon {
+	background-repeat: no-repeat;
+	border: 0px solid #151515;
+	background-image: url(icons.png);
+}
+
+.common-icon {
+	width: 32px; height: 32px;
+	display: inline-block;
+	border: 0px solid #000000;
+	
+}
+
+.address {
+	background-position: 0 -208px;
+}
+
+.telephone {
+	background-position: 0 -312px; 
+}
+
+.phone {
+	background-position: 0 -312px; 
+}
+
+.mobile {
+	background-position: 0 -104px;
+}
+
+.email-icon {
+	background-position: 0 0;
+}
+
+.email {
+	background-position: 12px 10px;
+}
+
+.name {
+	background-position: 12px -510px;
+}
+
+
+.subject {
+	background-position: 12px -406px;
+}
+
+.message {
+	background-position: 12px -250px;
+}
+
+/*
+.sprites { background: url(sprites.png) no-repeat; }
+.email-32 { width: 32px; height: 32px; background-position: 0 0; }
+.facebook-32 { width: 32px; height: 32px; background-position: 0 -52px; }
+.iphone-32 { width: 32px; height: 32px; background-position: 0 -104px; }
+.linkedin-32 { width: 32px; height: 32px; background-position: 0 -156px; }
+.location-32 { width: 32px; height: 32px; background-position: 0 -208px; }
+.message-32 { width: 32px; height: 32px; background-position: 0 -260px; }
+.phone1-32 { width: 32px; height: 32px; background-position: 0 -312px; }
+.sent-32 { width: 32px; height: 32px; background-position: 0 -364px; }
+.topic-32 { width: 32px; height: 32px; background-position: 0 -416px; }
+.twitter-32 { width: 32px; height: 32px; background-position: 0 -468px; }
+.user_male3-32 { width: 32px; height: 32px; background-position: 0 -520px; }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer-section p {
+	text-align: center; 
+	color: #FFFFFF;
+	display: block;
+}
+
+.footer-section {
+	text-align: center;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #47b63f;
+	background: #47b63f;
+}
+
+
+
+/* end FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+.page-about-section {
+	background: #FFFFFF;
+}
+/*  */
