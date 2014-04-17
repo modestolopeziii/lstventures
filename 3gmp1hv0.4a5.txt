@@ -1,0 +1,22 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch gh-pages
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   adidas.png
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	devexpress.png
+#	facebook-26.png
+#	fb-share-icon.png
+#	icons.png
+#	logo.png
+#	nike.png
+#	tag-26.png
+#	twitter-26.png
+#	twitter-share-icon.png
+
