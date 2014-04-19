@@ -735,7 +735,7 @@ textarea:focus {
 .login-container {
 	border: 0px solid black;
 	width: 90%;
-	margin: 180px auto;
+	margin: 160px auto;
 }
 
 .login-container .login-description h1 {
@@ -743,7 +743,14 @@ textarea:focus {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #9AD102;
 	width: 80%;
-	margin: 0 auto 50px auto;
+	margin: 0 auto 0px auto;
+
+}
+
+.login-container .login-description p {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 63px;
 }
 
 .login-container .login-form {
