@@ -8,12 +8,25 @@
 <!-- HERO -->
 	<section class= "hero">
 		<header class= "menu-navigation">
-			<a href= "index.html"><figure class= "logo"> </figure></a>
+			<a href= "#" id= "mobile-icon-button">
+					<ul class= "mobile-menu-navigation" id= "mobile-icon-button">
+						<li>
+							<div class= "mobile-icon-container">
+								<div class= "mobile-icon-line"></div>
+								<div class= "mobile-icon-line"></div>
+								<div class= "mobile-icon-line"></div>
+							</div>
+						</li>
+					</ul>
+				</a>
+				
+				<a href= "index.html"><figure class= "logo"> </figure></a>
+				
 			<ul class= "other-menu">
 
 				<li><a href= "client-login.html" class= "common-navigation"> Client Login </a> </li>
 
-				<li><a href= "#" class= "common-navigation"> Security |</a> </li>
+				<li><a href= "#" class= "common-navigation"> Jobs |</a> </li>
 			</ul>
 			<ul class= "main-menu">
 				<li><a href= "index.html" class= "about-navigation common-navigation"> Home </a> </li>
@@ -28,6 +41,16 @@
 			</ul>
 
 		</header>
+		<section class= "mobile-sidebar-container">
+					<ul>
+						<a href= "#about-section" class= "about-navigation common-navigation"><li> <figure class= "common-mobile-icon about-icon"></figure>About</li></a>
+						<a href= "#product-section" class= "product-navigation common-navigation"><li> <figure class= "common-mobile-icon about-icon"></figure>Business Solution</li></a>
+						<a href= "#contact-section" class= "contact-navigation common-navigation"> <li> <figure class= "common-mobile-icon about-icon"></figure>Contact </li></a>
+						<a href= "news.html" class= "common-navigation"><li> <figure class= "common-mobile-icon about-icon"></figure> News  </li></a>
+						<a href= "news.html" class= "common-navigation"><li><figure class= "common-mobile-icon about-icon"></figure> Jobs </li></a>
+						<a href= "news.html" class= "common-navigation"><li><figure class= "common-mobile-icon about-icon"></figure> Client</li></a>
+					</ul>
+			</section>
 	<!--
 		<section class= "hero-container">
 		
@@ -175,5 +198,7 @@
 		</p>
 	</section>
 <!--end FOOTER-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src= "js/main.js"></script>
 </body>
 </html>
