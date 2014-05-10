@@ -506,6 +506,18 @@ ul {
   width: 28%;
 }
 
+.product-section .product-1:nth-child(even) {
+	background-image: url(../image/adidas.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.product-section .product-1:nth-child(odd) {
+	background-image: url(../image/nike.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 .prouduct-1 .product-image:hover {
   background-color: rgba(0,0,0,0.1);
   cursor: pointer;
@@ -531,6 +543,8 @@ ul {
   margin: 0 20px 35px;
   width: 50%;
 }
+
+
 
 .product-container .product-description .payroll-image-1 {
   background-image: url(../image/easypay1.png);
@@ -782,9 +796,13 @@ textarea:focus {
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
+/*  .hero {
     background-color: #ca9a68;
   }
+*/
+ .mobile-sidebar-container {
+	display: none;
+ }
 
   .mobile-menu-navigation {
     display: block;
@@ -798,14 +816,18 @@ textarea:focus {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .hero {
+/*  .hero {
     background-color: #cac168;
   }
-
+*/
   .mobile-menu-navigation {
     display: block;
   }
 
+  .mobile-sidebar-container {
+	display: none;
+  }
+  
   .hero .hero-container {
     width: 80%;
   }
@@ -816,14 +838,18 @@ textarea:focus {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .hero {
+/*  .hero {
     background-color: #df9fbc;
-  }
+  } */
 
   .mobile-menu-navigation {
     display: block;
   }
 
+  .mobile-sidebar-container {
+	visibilty: hidden;
+  }
+  
   .hero .hero-container {
     border: 0 solid #FFF;
     padding-left: 100px;
