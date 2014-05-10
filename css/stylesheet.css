@@ -384,6 +384,7 @@ ul {
   border-bottom: 1px solid #C3C3C3;
   padding: 100px 0 50px;
   width: 100%;
+  color: #FFFFFF;
 }
 
 .testimonial-section .testimonial-container {
@@ -753,7 +754,10 @@ textarea:focus {
   font-weight: bold;
 }
 
-.news-section h1,.about-section .about-container .about-title h1,.product-section .product-container .product-title h1,.login-container .login-description h1 {
+.news-section h1,
+.about-section .about-container .about-title h1,
+.product-section .product-container .product-title h1,
+.login-container .login-description h1 {
   border-bottom: 1px solid #9AD102;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -761,7 +765,11 @@ textarea:focus {
   width: 80%;
 }
 
-.news-section .news-container .news-wrap .news-description p,.news-section .news-container .news-wrap .news-description h3,.news-section .news-container .news-wrap .news-description .news-social-media,.product-container .product-description h3,h2,p,.accounting-system-ul {
+.news-section .news-container .news-wrap .news-description p,
+.news-section .news-container .news-wrap .news-description h3,
+.news-section .news-container .news-wrap .news-description .news-social-media,
+.product-container .product-description h3,h2,p,
+.accounting-system-ul {
   text-align: left;
 }
 
