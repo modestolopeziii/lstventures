@@ -3,6 +3,7 @@ html,body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  color: #3A3A3A;
 }
 
 .bring-to-front {
@@ -53,6 +54,11 @@ section,header,ul,li,p,a,h1,h2,h3,h4,h5,h6 {
   font-family: Lato, sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	color: #3a3a3a;
+	font-weight: bold;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -77,22 +83,33 @@ ul {
 .common-link {
   border: 1px solid #9AD102;
   border-radius: 5px;
-  color: #9AD102;
   float: right;
   padding: 10px;
+  background: #9AD102;
+  
+  -webkit-transition: -webkit-box-shadow .3s;
+     -moz-transition: -moz-box-shadow .3s;
+          transition: box-shadow .3s;
+  
+  -webkit-box-shadow: 0 2px 5px -1px gray;
+	 -moz-box-shadow: 0 2px 5px -1px gray;
+		  box-shadow: 0 2px 5px -1px gray;
 }
 
 .common-link:hover {
-  background: #9AD102;
-  box-shadow: 0 2px 5px -1px gray;
+	opacity: 0.9;
 }
 
 .common-link:active {
-  box-shadow: 0;
+  border: 1px solid #c3c3c3;
+    -webkit-box-shadow: 0 0 0 0 #F2F2F2;
+     -moz-box-shadow: 0 0 0 0 #F2F2F2;
+          box-shadow: 0 0 0 0 #F2F2F2;
+  
 }
 
 .common-link a {
-  color: #9AD102;
+  color: #FFFFFF;
 }
 
 .menu-navigation {
@@ -297,8 +314,27 @@ ul {
   font-size: 18px;
   margin: 10px auto 0;
   padding: 20px;
-  text-overflow: ellipsis;
   width: 25%;
+}
+
+.news-section .news-container .news-wrap p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.news-section .news-container .news-wrap p a {
+	color: #666666;
+}
+
+.news-section .news-container .news-wrap h3 .read-more-link {
+	color: #716E6E;
+}
+
+.news-section .news-container .news-wrap h3 .read-more-link:hover,
+.news-section .news-container .news-wrap p a:hover {
+	color: #9AD102;
 }
 
 .news-section .news-container .news-wrap .news-description .news-social-media {
@@ -395,11 +431,14 @@ ul {
 }
 
 .testimonial-title h1 {
-  border-bottom: 1px solid #FFF;
+  border: 0px solid #FFF;
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
   width: 80%;
+  color: #ffffff;
+  font-family: helvetica;
+  letter-spacing: 2px;
 }
 
 .testimonial-description p {
@@ -486,39 +525,54 @@ ul {
   background-color: #C3C3C3;
 }
 
-.product-1 {
-  border: 1px solid #c3c3c3;
-  display: inline-block;
+.img-container {
+	width: 30%;
+	display: inline-block;
+	margin: 0 20px 35px;
+}
+
+.img-container a {
+	color: #181818;
+}
+
+.img-container label {
+	display: block;
+	padding: 20px;
+	border: 0px solid black;
+	font-family: calibri;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.common-img-work {
+  border: 0px solid #808080;
   height: 300px;
-  margin: 0 20px 35px;
-  width: 28%;
+  width: 100%; /*28%*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.prouduct-1 .product-image .product-description {
-  background-color: rgba(0,0,0,0.9);
-  border: 3px solid #c3c3c3;
-  display: inline-block;
-  height: 300px;
-  margin: 0 15px 35px 20px;
-  padding: 0;
-  position: relative;
-  transition: opacity .4s;
-  width: 28%;
+.img-accounting {
+	background-image: url(../image/accounting-system1.png);
+	background-color: #4277CE;
 }
 
-.product-section .product-1:nth-child(even) {
-	background-image: url(../image/adidas.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+.img-educational {
+	background-image: url(../image/educational-system.png);
+	background-color: #F8DC3A;
 }
 
-.product-section .product-1:nth-child(odd) {
-	background-image: url(../image/nike.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+.img-payroll {
+	background-image: url(../image/payroll-system.png);
+	background-color: #9149C0;
 }
 
-.prouduct-1 .product-image:hover {
+.img-hris {
+	background-image: url(../image/hris-system.png);
+	background-color: #47BF66;
+}
+
+.common-img-work .product-image:hover {
   background-color: rgba(0,0,0,0.1);
   cursor: pointer;
 }
@@ -533,17 +587,6 @@ ul {
   margin: 0 20px 35px;
   width: 50%;
 }
-
-.product-container .product-description .payroll-image {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  border: 1px solid #c3c3c3;
-  display: inline-block;
-  height: 300px;
-  margin: 0 20px 35px;
-  width: 50%;
-}
-
 
 
 .product-container .product-description .payroll-image-1 {
@@ -588,7 +631,7 @@ ul {
 }
 
 .contact-section .contact-wrap {
-  border: 0 solid #FFF;
+  border: 0px solid #FFF;
   font-size: 20px;
   margin: 0 auto;
   padding: 50px 0;
@@ -604,7 +647,6 @@ ul {
 
 .contact-section .contact-wrap h1 {
   border-bottom: 1px solid #9AD102;
-  margin: 0 auto 50px;
   padding-bottom: 10px;
   text-align: center;
   width: 80%;
@@ -728,7 +770,7 @@ textarea:focus {
 }
 
 .footer-section {
-  background: #47b63f;
+  background: #181818;
   border-bottom: 1px solid #47b63f;
   border-top: 1px solid #F2F2F2;
   text-align: center;
@@ -771,12 +813,16 @@ textarea:focus {
 .news-section h1,
 .about-section .about-container .about-title h1,
 .product-section .product-container .product-title h1,
-.login-container .login-description h1 {
+.login-container .login-description h1,
+.testimonial-title h1,
+.contact-section .contact-wrap h1 {
   border-bottom: 1px solid #9AD102;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   text-align: center;
   width: 80%;
+  font-size: 40px;
+  font-family: helvetica;
 }
 
 .news-section .news-container .news-wrap .news-description p,

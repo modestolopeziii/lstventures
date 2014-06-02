@@ -1,21 +1,16 @@
 <!DOCTYPE html>
+<?php
+	require('../wordpress-3.9/wordpress/wp-blog-header.php');
+?>
 <html><head>
     <title> Lee System Technology Ventures </title>
     <link rel= "stylesheet" href= "css/stylesheet.css" />
     <link rel= "stylesheet" href= "css/normalize.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-<!--<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="css/create-ui.css" />-->
-    <link rel="stylesheet" href="css/midgardnotif.css"/>
 </head><body>
 		
 <!-- HERO -->
 <section class= "hero">
-<!--<div class= "setting-container">
-	 <input type= "button" value= "Enabled" id= "enabled"/> 
-	 <input type= "button" value= "Disabled" id= "disabled"/>
-	</div>
--->
   <header class= "menu-navigation bring-to-front">
     <a href= "#" id= "mobile-icon-button">
     <ul class= "mobile-menu-navigation" id= "mobile-icon-button">
@@ -82,77 +77,38 @@
 			<section class= "news-section">
 				<section class= "news-container">
 				<section class= "news title"> <h1 class= "editable"> Latest News </h1> </section>
-
+<?php
+	global $post;
+	$args = array( 'posts_per_page' => 3 );
+	$myposts = get_posts( $args );
+	foreach( $myposts as $post ) :	setup_postdata($post);
+?>	
 				<!--NEWS 1-->
 					<section class= "news-wrap">
 						<figure class= "news-image"> </figure>
 						<section class= "news-description">
-							<h3 class= "editable"> 4 tips to become a successful <span class= "underline-green">Web Developer</span> </h3>
+							<h3 class= "editable">
+								<a class= "read-more-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
+							</h3>
 							<section class= "news-social-media">
 								<ul>
-									<li class= "editable"><strong>4/4/2014</strong></li>
+									<li class= "editable"><strong><?php the_date(); ?></strong></li>
 									<li class= "editable">| 5 mins read</li>
-									 
-									 
 								</ul>
 							</section>
-							<p class= "editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#" class= "editable"> Read more >> </a>
+							
+							<p class= "news-body editable">
+								<a class= "read-more-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_excerpt(); ?></a>
+								
 							</p>
 						</section>
 					</section>
 				<!--end NEWS 1-->
-				
-				<!--NEWS 1-->
-					<section class= "news-wrap">
-						<figure class= "news-image"> </figure>
-						<section class= "news-description">
-							<h3> <span class= "underline-green editable">Google Glass</span> has been released in USA </h3>
-							<section class= "news-social-media">
-								<ul>
-									<li class= "editable"><strong>4/4/2014</strong></li>
-									<li class= "editable">| 5 mins read</li>
-									
-								</ul>
-							</section>
-							<p class= "editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#" class= "editable"> Read more >> </a>
-							</p>
-						</section>
-					</section>
-				<!--end NEWS 1-->
-				
-				
-				
-				
-				<!--NEWS 1-->
-					<section class= "news-wrap">
-						<figure class= "news-image"> </figure>
-						<section class= "news-description">
-							<h3 class= "editable"> <span class= "underline-green">'Hack'</span> - New programming language developed by Facebook </h3>
-							<section class= "news-social-media">
-								<ul>
-									<li class= "editable"><strong>4/4/2014</strong></li>
-									<li class= "editable">| 5 mins read</li>
-									 
-									 
-								</ul>
-							</section>
-							<p class= "editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							<a href= "#" class= "editable"> Read more >> </a>
-							</p>
-						</section>
-					</section>
-				<!--end NEWS 1-->
-					<nav class= "news-pagination" class= "editable">
+<?php endforeach; ?>				
+<!--				<nav class= "news-pagination" class= "editable">
 						<<  1 / 5  >>
 					</nav>
+-->
 				</section>
 
 			</section>
@@ -194,37 +150,37 @@
 					</ul>
 				</header>
 				
-				<section class= "product-1">
-					<figure class= "product-image">
-						<section class= "product-description"></section>
-					</figure>
-					<section class= "product-title sample-product">  </section>
-				</section>
-
-				<section class= "product-1">
-					<figure class= "product-image sample-product"></figure>
-					<section class= "product-title">  </section>
-				</section>
-
-				<section class= "product-1">
-					<figure class= "product-image sample-product"></figure>
-					<section class= "product-title">  </section>
-				</section>
-
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
-
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
-
-				<section class= "product-1">
-					<figure class= "product-image"></figure>
-					<section class= "product-title">  </section>
-				</section>
+				<div class= "img-container">
+					<a href="accounting-system.html">
+						<section class= "common-img-work img-accounting">
+						</section>
+						<label>Accounting System</label>
+					</a>
+				</div>
+				
+				<div class= "img-container">
+					<a href="educational-system.html">
+						<section class= "common-img-work img-educational">
+						</section>
+						<label>Educational System</label>
+					</a>
+				</div>
+				
+				<div class= "img-container">
+					<a href="payroll-system.html">
+						<section class= "common-img-work img-payroll">
+						</section>
+						<label>Payroll System</label>
+					</a>
+				</div>
+				
+				<div class= "img-container">
+					<a href="#">
+						<section class= "common-img-work img-hris">
+						</section>
+						<label>Human Capital Mangement System</label>
+					</a>
+				</div>
 
 			<div>
 			<span class= "common-link"> <a href= "business-solution.html"> View all projects >> </a> </span>
@@ -290,23 +246,5 @@
 	
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/backbone.js"></script>
-    <script src="js/vie.js"></script>
     <script src="js/main.js"></script>
-
-    <script src="js/jquery.rdfquery.core.js"></script>
-    <script src="js/jquery.rdfquery.rules.js"></script>
-    <script src="js/annotate.js"></script>
-
-    <script src="js/rangy-core.js"></script>
-    <script src="js/hallo.js"></script>
-    <script src="js/create.js"></script>
-	
-<!--	
-	<script src= "js/jquery.Midgard.midgardCreate.js"></script>
-	<script src= "js/jquery.Midgard.midgardEditable.js"></script>
-	<script src= "js/jquery.Midgard.midgardWorkflows.js"></script>
-	<script src= "js/jquery.Midgard.midgardToolbar.js"></script>
--->
 </body></html>
