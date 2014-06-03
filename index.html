@@ -77,42 +77,45 @@
 			<section class= "news-section">
 				<section class= "news-container">
 				<section class= "news title"> <h1 class= " "> Latest News </h1> </section>
+
 <?php
-	global $post;
+/*	global $post;
 	$args = array( 'posts_per_page' => 3 );
 	$myposts = get_posts( $args );
 	foreach( $myposts as $post ) :	setup_postdata($post);
+*/
 ?>	
 				<!--NEWS 1-->
-					<section class= "news-wrap">
+<!--					<section class= "news-wrap">
 						<figure class= "news-image"> </figure>
 						<section class= "news-description">
 							<h3 class= " ">
-								<a class= "read-more-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
+								<a class= "read-more-link" href="<?php# the_permalink() ?>" rel="bookmark" title="<?php# the_title_attribute(); ?>"><?php# the_title(); ?></a> 
 							</h3>
 							<section class= "news-social-media">
 								<ul>
-									<li class= " "><strong><?php the_date(); ?></strong></li>
+									<li class= " "><strong><?php# the_date(); ?></strong></li>
 									<li class= " "></li>
 								</ul>
 							</section>
 							
 							<p class= "news-body  ">
-								<a class= "read-more-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_excerpt(); ?></a>
+								<a class= "read-more-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php# the_title_attribute(); ?>"><?php# the_excerpt(); ?></a>
 								
 							</p>
 						</section>
 					</section>
 				<!--end NEWS 1-->
-<?php endforeach; ?>				
+<?php# endforeach; ?>				
 <!--				<nav class= "news-pagination" class= " ">
 						<<  1 / 5  >>
 					</nav>
--->
+
 				</section>
 
 			</section>
-		<!--end NEWS-->
+
+			<end NEWS-->
 
 		<!--ABOUT-->
 		<section class= "about-section" id= "about-section" about="about.html" typeof="sioc:Post" rel="dcTerms:hasPart" rev="dcterms:partOf">
